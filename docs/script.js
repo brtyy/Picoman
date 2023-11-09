@@ -1,29 +1,23 @@
-let jmenoFetaka = window.prompt('Wassup feťáku, jak se jmenuješ?');
-console.log('Tvé jméno je ' + jmenoFetaka + '.');
-window.alert('Zdravím tě ' + jmenoFetaka + '.');
+console.log(`ahoj ty buzíku, co tu chceš?`);
 
-let mnozstviFetu = window.prompt('Kolik toho u sebe máš?');
-console.log(`Tvé množství fetu je ${mnozstviFetu}.`);
 
-const MINIMUM = 5;
+//alerty
+let jmenoFetaka = window.prompt('Wassup feťáku, jak se jmenuješ?')
+console.log('Tvé jméno je ' + jmenoFetaka + '.')
 
-if (mnozstviFetu === MINIMUM) {
-    window.alert('Vítej mezi námi!');
-}
+let mnozstviFetu = 1;
+window.alert(`Tvé množství fetu je ${mnozstviFetu}.`)
 
-else if (mnozstviFetu > MINIMUM) {
-    window.alert('Proč jsi nepřišel dřív?! Dávno bychom tě vzali!');
+const MINIMUM = 15;
+
+let vekUzivatele = window.prompt('jak jsi starý ' + jmenoFetaka+ '?')
+
+if (Number(vekUzivatele) >= MINIMUM){
+    window.alert('jsi připraven fetovat')
 }
 
 else {
-    if (!isNaN (mnozstviFetu)) {
-        window.alert(`To je málo, budeš se muset víc snažit!`);
-    }
-    else {
-        window.alert(`To není číslo ty pako.`);
-        mnozstviFetu = window.prompt(`Kolik toho teda máš?`);
+    if(!isNaN(vekUzivatele)) {
+        window.alert('jsi moc mladý na to fetovt, vymysli si větší věk a dej si piko s námi')
     }
 }
-
-
-
