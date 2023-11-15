@@ -1,15 +1,18 @@
 console.log(`ahoj ty buzíku, co tu chceš?`);
 
+const MINIMUM = 15;
+const MAXIMUM = 40; 
 
 //alerty
+
 let jmenoFetaka = window.prompt('Wassup feťáku, jak se jmenuješ?')
 console.log('Tvé jméno je ' + jmenoFetaka + '.')
 
-let mnozstviFetu = 1;
-window.alert(`Tvé množství fetu je ${mnozstviFetu}.`)
+const chceFet = window.confirm('sháníš fet?')
 
-const MINIMUM = 15;
-
+if (chceFet) {
+    window.alert('jsi tu správně ' +jmenoFetaka+ '.')
+    
 let vekUzivatele = window.prompt('jak jsi starý ' + jmenoFetaka+ '?')
 
 if (Number(vekUzivatele) >= MINIMUM){
@@ -20,4 +23,11 @@ else {
     if(!isNaN(vekUzivatele)) {
         window.alert('jsi moc mladý na to fetovt, vymysli si větší věk a dej si piko s námi')
     }
+}
+
+let mnozstviFetu = 1;
+window.alert(`Tvé množství fetu je ${mnozstviFetu}.`)
+}
+else{
+    window.alert('jdi pryč a nevolej benga')
 }
